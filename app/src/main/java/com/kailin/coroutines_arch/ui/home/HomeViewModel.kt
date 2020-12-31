@@ -1,19 +1,17 @@
 package com.kailin.coroutines_arch.ui.home
 
-import androidx.lifecycle.MutableLiveData
-import com.kailin.coroutines_arch.repo.CommonService
-import com.kailin.coroutines_arch.repo.common.Categories
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.liveData
+import com.kailin.coroutines_arch.repo.typicode.TypiCode
+import com.kailin.coroutines_arch.repo.typicode.TypiService
 import com.kailin.traffic.app.BaseViewModel
 
 class HomeViewModel : BaseViewModel() {
 
-    private val commonService: CommonService by lazy { okHttpHelper.create(CommonService::class.java) }
-    val categorieData: MutableLiveData<Categories> by lazy { MutableLiveData() }
+    val typiCodes: LiveData<MutableList<TypiCode>>
 
-    fun initData() {
-        runIO {
-            val result = commonService.categoriesAsync().await()
-            categorieData.postValue(result)
-        }
+    init {
+        val service = okHttpHelper.create(TypiService::class.java)
+        typiCodes = liveData { emit(service.typiCodesAsync().await()) }
     }
 }

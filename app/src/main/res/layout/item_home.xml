@@ -5,7 +5,7 @@
 
         <variable
             name="data"
-            type="com.kailin.coroutines_arch.repo.common.Category" />
+            type="com.kailin.coroutines_arch.repo.typicode.TypiCode" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -13,11 +13,20 @@
         android:layout_height="wrap_content"
         android:padding="10dp">
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{Integer.toString(data.categories.id)}"
+            android:background="@null"
+            android:text="@{Integer.toString(data.id)}"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,7 +34,8 @@
             android:id="@+id/text2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{data.categories.name}"
+            android:background="@null"
+            android:text="@{data.title}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/text1"
             app:layout_constraintTop_toBottomOf="@id/text1" />

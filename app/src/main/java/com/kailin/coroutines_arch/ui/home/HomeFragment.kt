@@ -21,9 +21,6 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
         viewDataBinding?.let {
             it.recyclerView.adapter = adapter
         }
-        viewModel.initData()
-        viewModel.categorieData.observe(this, {
-            adapter.updateData(it.categories)
-        })
+        viewModel.typiCodes.observe(this, { adapter.updateData(it) })
     }
 }

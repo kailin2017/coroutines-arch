@@ -21,9 +21,9 @@ class OkHttpHelper private constructor() {
     private val retrofit: Retrofit by lazy {
         Retrofit.Builder()
             .client(okHttpClient)
+            .baseUrl("https://jsonplaceholder.typicode.com/")
             .addConverterFactory(GsonConverterFactory.create(GsonHelper.instance.gson))
             .addCallAdapterFactory(CoroutineCallAdapterFactory())
-            .baseUrl(BuildConfig.HOST)
             .build()
     }
 
