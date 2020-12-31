@@ -1,13 +1,7 @@
 package com.kailin.coroutines_arch.ui.notifications
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import com.kailin.traffic.app.BaseViewModel
 
-class NotificationsViewModel : ViewModel() {
+class NotificationsViewModel : BaseViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
-    }
-    val text: LiveData<String> = _text
 }
