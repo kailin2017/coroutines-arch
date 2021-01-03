@@ -4,8 +4,8 @@ import com.kailin.coroutines_arch.R
 import com.kailin.coroutines_arch.databinding.ItemHomeBinding
 import com.kailin.coroutines_arch.repo.typicode.TypiCode
 import com.kailin.coroutines_arch.utils.GlideHelper
-import com.kailin.traffic.app.MyRecyclerAdapter
-import com.kailin.traffic.app.ViewHolder
+import com.kailin.coroutines_arch.app.MyRecyclerAdapter
+import com.kailin.coroutines_arch.app.ViewHolder
 
 class HomeAdapter : MyRecyclerAdapter<ItemHomeBinding, TypiCode>() {
 

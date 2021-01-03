@@ -1,6 +1,6 @@
 package com.kailin.coroutines_arch.ui.dashboard
 
-import com.kailin.traffic.app.BaseViewModel
+import com.kailin.coroutines_arch.app.BaseViewModel
 
 class DashboardViewModel : BaseViewModel() {
 

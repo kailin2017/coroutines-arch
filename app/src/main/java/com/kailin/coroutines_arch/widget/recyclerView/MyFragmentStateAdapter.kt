@@ -1,7 +1,6 @@
-package com.kailin.traffic.widget.recyclerView
+package com.kailin.coroutines_arch.widget.recyclerView
 
 import androidx.fragment.app.FragmentActivity
-import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.viewpager2.adapter.FragmentStateAdapter
 

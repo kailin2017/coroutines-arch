@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.kailin.coroutines_arch.databinding.FragmentDashboardBinding
-import com.kailin.traffic.app.BaseFragment
+import com.kailin.coroutines_arch.app.BaseFragment
 
 class DashboardFragment : BaseFragment<DashboardViewModel, FragmentDashboardBinding>() {
 

@@ -1,4 +1,4 @@
-package com.kailin.traffic.widget.recyclerView
+package com.kailin.coroutines_arch.widget.recyclerView
 
 import androidx.recyclerview.widget.DiffUtil
 import java.util.*

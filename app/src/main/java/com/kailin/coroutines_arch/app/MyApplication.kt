@@ -1,4 +1,4 @@
-package com.kailin.traffic.app
+package com.kailin.coroutines_arch.app
 
 import android.app.Application
 

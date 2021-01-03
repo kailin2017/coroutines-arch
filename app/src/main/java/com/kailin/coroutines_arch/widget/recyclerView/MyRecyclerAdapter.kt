@@ -1,4 +1,4 @@
-package com.kailin.traffic.app
+package com.kailin.coroutines_arch.app
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.kailin.traffic.widget.recyclerView.MyRecyclerDiffCallBack
+import com.kailin.coroutines_arch.widget.recyclerView.MyRecyclerDiffCallBack
 
 abstract class MyRecyclerAdapter<V : ViewDataBinding, D>(private val onItemClick: View.OnClickListener? = null) :
     RecyclerView.Adapter<ViewHolder<V>>() {
